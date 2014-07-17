@@ -1,0 +1,102 @@
+.b-reviews{
+    $headerHeight: 81;
+    padding-bottom: em(140);
+    border-top:7px solid #ffa007;
+    position: relative;
+    padding-top: em(145);
+    &:before{
+        content:"";
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        margin-left: -58px;
+        width: 117px;
+        height: 64px;
+        background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTcgNjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDExNyA2NCI+PHBhdGggZmlsbD0iI0Y5QTAxQiIgZD0iTTEuMiA3bC0xIC4xIDMuMy0uMWMzMC4xIDAgNTQuNSAyNC40IDU0LjUgNTQuNSAwLTMwLjEgMjQuNC01NC41IDU0LjUtNTQuNSAxLjUgMCAyLjkuMSA0LjQuMmwtMS44LS4yaDEuOXYtN2MtMS41LS4xLTIuNSAwLTQgMC0zMC4yIDAtNTUgMTguOS01NSA0Mi42IDAtMjMuNy0yNC44LTQyLjYtNTUtNDIuNmgtM3Y3aDEuMnoiLz48L3N2Zz4=) no-repeat;
+        background-size: 100% 100%;
+    }
+    &__header{
+        height: $headerHeight*1px;
+        padding-left: 105px;
+        margin-bottom: em(66);
+        background: url(data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIiBbDQoJPCFFTlRJVFkgbnNfZmxvd3MgImh0dHA6Ly9ucy5hZG9iZS5jb20vRmxvd3MvMS4wLyI+DQpdPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iODEiIGhlaWdodD0iODEiIHZpZXdCb3g9IjAgMCA4MSA4MSI+PHBhdGggZmlsbD0iI0NBQ0FDQSIgZD0iTTQwLjUgMGMtMjIuMzMyIDAtNDAuNSAxOC4xNjgtNDAuNSA0MC41IDAgMjIuMzM0IDE4LjE2OCA0MC41IDQwLjUgNDAuNXM0MC41LTE4LjE2NiA0MC41LTQwLjVjMC0yMi4zMzItMTguMTY4LTQwLjUtNDAuNS00MC41em0wIDc3Ljc2MmMtMjAuNTQ1IDAtMzcuMjYtMTYuNzE2LTM3LjI2LTM3LjI2MnMxNi43MTUtMzcuMjYgMzcuMjYtMzcuMjZjMjAuNTQ1IDAgMzcuMjYgMTYuNzE1IDM3LjI2IDM3LjI2cy0xNi43MTUgMzcuMjYyLTM3LjI2IDM3LjI2MnptLTkuODcyLTQ3Ljk1NGMtMS41ODYgMC0yLjk2NC41NDItNC4xMyAxLjYyN3MtMS43NSAyLjM1MS0xLjc1IDMuNzk4YzAgLjcwMS4xMDcgMS4zNzguMzIzIDIuMDM0LjIxNi42NTYuNTg0IDEuMjU0IDEuMTA2IDEuNzk3LjU0NC41NjUgMS4yNTkgMS4wMDYgMi4xNDQgMS4zMjJzMi4wMy40NzUgMy40MzguNDc1aDEuOTA2Yy0uMjI4IDIuMzUxLTEuMDY3IDQuMzUxLTIuNTE5IDYtMS40NTMgMS42NTEtMy40NjEgMy4wOTgtNi4wMjUgNC4zNGwxLjQ5NSAyLjQwOGMzLjI0MS0xLjQyNCA2LjAxMS0zLjUxNSA4LjMxMS02LjI3MyAyLjMtMi43NTcgMy40NS01LjQ5MSAzLjQ1LTguMjA0IDAtMi45MTYtLjY2OC01LjE5OS0yLjAwNS02Ljg0OS0xLjMzOC0xLjY1LTMuMjUyLTIuNDc1LTUuNzQ0LTIuNDc1em0xNi43MTYgMGMtMS41ODggMC0yLjk2NS41NDItNC4xMzEgMS42MjdzLTEuNzUgMi4zNTEtMS43NSAzLjc5OGMwIC43MDEuMTA3IDEuMzc4LjMyMiAyLjAzNC4yMTcuNjU2LjU4NiAxLjI1NCAxLjEwNyAxLjc5Ny41NDMuNTY1IDEuMjU4IDEuMDA2IDIuMTQzIDEuMzIyczIuMDMxLjQ3NSAzLjQzOC40NzVoMS45MDZjLS4yMjcgMi4zNTEtMS4wNjYgNC4zNTEtMi41MTggNi0xLjQ1MyAxLjY1MS0zLjQ2MSAzLjA5OC02LjAyNSA0LjM0bDEuNDk2IDIuNDA4YzMuMjM4LTEuNDI0IDYuMDEtMy41MTUgOC4zMDktNi4yNzMgMi4zMDEtMi43NTcgMy40NTEtNS40OTEgMy40NTEtOC4yMDQgMC0yLjkxNi0uNjY4LTUuMTk5LTIuMDA2LTYuODQ5LTEuMzM2LTEuNjUtMy4yNTItMi40NzUtNS43NDItMi40NzV6Ii8+PC9zdmc+) no-repeat left center;
+    }
+    &__count{
+        display: inline-block;
+        $font-size: 78;
+        font-size: em($font-size);
+        font-family: $secondary__font;
+        font-weight: 800;
+        line-height: $headerHeight*1px;
+        vertical-align: middle;
+    }
+    &__htext{
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: em(22);
+    }
+    &__htitle{
+        $font-size: 28;
+        font-size: em($font-size);
+        font-family: $secondary__font;
+        font-weight: 300;
+        display: block;
+        line-height: 1.3;
+    }
+    &__hlink{
+        $font-size: 18;
+        font-size: em(18);
+        font-family: $secondary__font;
+        font-weight: 300;
+    }
+    &__item{
+        font-family: $secondary__font;
+        font-weight: 400;
+        padding-bottom: em(46);
+        p {
+            $font-size: 18;
+            font-size: em($font-size);
+            line-height: 1.9;
+        }    
+    }
+    &__iheader{
+        $font-size: 14;
+        font-size: em($font-size);
+        color: #464646;
+        font-style: italic;
+        padding-bottom:em(2, $font-size);
+    }
+    &__slider{
+        position: relative;
+        padding-bottom: em(17);
+    }
+    .flex-control-nav{
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 0 em(4);
+        }
+        a{
+            display: block;
+            border:3px solid #ffae00;
+            border-radius: 50%;
+            background-color: #ffae00;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            padding: 8px 8px 0 0;
+            cursor: pointer;
+            &.flex-active{
+                background-color: transparent;
+            }
+        }
+    }
+    .slides > li{
+        display: none;
+    }
+}

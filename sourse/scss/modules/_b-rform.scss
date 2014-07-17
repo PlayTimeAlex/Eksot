@@ -1,0 +1,23 @@
+.b-rform{
+    background-color: #ffae00;
+    padding: em(19) em(30) em(26);
+    position: relative;
+    &__title{
+        text-transform: uppercase;
+        font-family: $secondary__font;
+        font-weight: 300;
+        color: #fff;
+        text-align: center;
+        $font-size: 30;
+        font-size: em($font-size);
+        line-height: 1.23;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.294);
+        padding-bottom: em(24, $font-size);
+        strong{
+            font-weight: 800;
+        }
+        .item-type{
+            font-size: em(22, $font-size);
+        }
+    }
+}

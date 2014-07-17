@@ -1,0 +1,70 @@
+.b-features{
+    padding-bottom: em(80);
+    &__item{
+        width: 19.36%;
+        float: left;
+        text-align: center;
+        margin-left: 0.8%;
+        p{
+            $font-size: 14;
+            font-size: em($font-size);
+            line-height: 1.3;
+        }
+        &:hover{
+            .b-features__circle{
+                &:before{
+                    transform:rotate(360deg);
+                }
+            }
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+    &__title{
+        $font-size: 14;
+        font-size: em($font-size);
+        font-family: $secondary__font;
+        font-weight: 700;
+        color: #464646;
+        text-transform: uppercase;
+        line-height: 1.7;
+        padding-bottom: em(22, $font-size);
+    }
+    &__circle{
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: em(21);
+        &:before{
+            content:"";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            background: linear-gradient(359deg, transparent 50%, #cacaca 50%), linear-gradient(180deg, #cacaca 50%, transparent 50%);
+            background-color: #ffa007;
+            transition: transform 1s ease;
+        }
+    }
+    &__icon{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        border: 5px solid transparent;
+        background-clip: content-box;
+        display: block;
+        position: relative;
+        z-index: 0;
+        background-position:center;
+        background-repeat:no-repeat;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,93 @@
+.b-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:100;
+    transition: top 0.3s ease;
+    &__top{
+        background-color: #093e67;
+        height: 104px;
+        padding-top: 15px;
+    }
+    &__menu{
+        background-color: #e3eff8;
+    }
+    &__menu-item{
+        display: inline-block;
+        > a{
+            $font-size: 14;
+            font-size: em($font-size);
+            text-transform: uppercase;
+            color: #0076a3;
+            font-family: $secondary__font;
+            font-weight: 600;
+            text-decoration: none;
+            display: block;
+            padding: em(14, $font-size) em(17, $font-size);
+            transition: color 0.15s ease, background-color 0.15s ease;
+        }
+        &:hover > a, .active{
+            color: #ffffff;
+            background-color: #feb20b;
+        }
+    }
+    &.fixed{
+        position: fixed;
+        top: -119px;
+    }
+    &__logo{
+        display: block;
+        max-width: 100%;
+    }
+    &__feature{
+        $font-size: 11;
+        font-size: em($font-size);
+        color: #fff;
+        padding: em(5, $font-size) 0 em(4, $font-size) em(57, $font-size);
+        background-position: em(14, $font-size) center;
+        background-repeat: no-repeat;
+    }
+    &__call{
+        text-transform: uppercase;
+        $font-size: 13;
+        font-size: em($font-size);
+        color: #ffffff;
+        font-family: $secondary__font;
+        font-weight: 700;
+        .rcall{
+            $font-size: 14;
+            font-size: $font-size*1px;
+            font-family: $base__font;
+            text-transform: lowercase;
+            padding: 0 em(9, $font-size);
+            color: #000;
+            border-radius: 4px;
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border:1px solid rgb(174, 113, 8);
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYzcwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iI2ZmYjQwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc0JSIgc3RvcC1jb2xvcj0iI2ZmOTAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjdmMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) repeat-x;
+            background-size: 100% 100%;
+            margin-left: 2px;
+            &:hover{
+                background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmN2YwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI2JSIgc3RvcC1jb2xvcj0iI2ZmOTAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZmYjQwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmM3MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            }
+        }
+    }
+    &__tel{
+        $font-size: 48;
+        font-size: em($font-size);
+        color: #fff;
+        font-family: $secondary__font;
+        font-weight: 700;
+        text-align: right;
+        line-height: 1;
+        padding-top: em(15, $font-size);
+        .code{
+            font-size: em(18, $font-size);
+            font-weight: 400;
+        }
+    }
+}
+

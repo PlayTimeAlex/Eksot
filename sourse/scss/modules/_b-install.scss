@@ -1,0 +1,25 @@
+.b-install{
+    background-color: #f3f3f3;
+    text-align: center;
+    border-top:1px solid #dfdfdf;
+    padding: em(57) 0 em(65);
+    &__img{
+        display: block;
+        margin: em(22) auto em(25);
+    }
+    p{
+        color: #898989;
+        $font-size: 14;
+        font-size: em($font-size);
+        line-height: 24/$font-size;
+    }
+    &__subtitle{
+        $font-size: 18;
+        font-size: em(18);
+        text-transform: uppercase;
+        color: #555555;
+        font-family: $secondary__font;
+        font-weight: 400;
+        padding: em(12, $font-size) 0 em(42, $font-size);
+    }
+}

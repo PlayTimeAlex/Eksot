@@ -1,0 +1,9 @@
+.b-created{
+    text-align: center;
+    float: right;
+    $font-size:12;
+    font-size: em($font-size);
+    a{
+        color:inherit;
+    }
+}

@@ -1,0 +1,39 @@
+.b-accessories{
+    padding-bottom: em(36);
+    &__item{
+        text-align: center;
+    }
+    &__title{
+        $font-size: 22;
+        font-size: em($font-size);
+        color: #f26522;
+        line-height: 1.3;
+        text-transform: uppercase;
+        padding-bottom: em(40, $font-size);
+    }
+    &__photo{
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    &__price{
+        $font-size: 29;
+        width: em(220, $font-size);
+        height: em(55, $font-size);
+        font-size: em($font-size);  
+        margin: em(17) auto em(14);
+        font-family: $secondary__font;
+        font-weight: 700;
+        color: #363636;
+        background: url(data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIiBbDQoJPCFFTlRJVFkgbnNfZmxvd3MgImh0dHA6Ly9ucy5hZG9iZS5jb20vRmxvd3MvMS4wLyI+DQpdPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjU1IiB2aWV3Qm94PSIwIDAgMjIwIDU1Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0ZDQjMxNSIgZD0iTTIyMCAwaC0yMjBsMTIuODk2IDI4LjQxOC0xMi44OTYgMjYuNTgyaDIyMGwtMTEuMzc5LTI2LjU4MiAxMS4zNzktMjguNDE4em0tNC4xMzMgNTIuNDgzaC0yMTEuNzM1bDEyLjQxMi0yNC4xNDktMTIuNDEyLTI1LjgxN2gyMTEuNzM1bC0xMC45NSAyNS44MTcgMTAuOTUgMjQuMTQ5eiIvPjwvc3ZnPg==) no-repeat;
+        background-size: 100% 100%;
+        line-height: em(55, $font-size);
+        .amount{
+            font-size: em(12, $font-size);
+            font-weight: 400;
+        }
+    }
+    .pr-ltitle{
+        padding-bottom: em(54);
+    }
+}

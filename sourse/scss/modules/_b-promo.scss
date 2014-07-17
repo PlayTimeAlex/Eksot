@@ -1,0 +1,102 @@
+.b-promo{
+    height: 564px;
+    background:url(../images/content/promo-bg.jpg) no-repeat center top;
+    position: relative;
+    margin-bottom: em(10);
+    &__item{
+        position: absolute;
+        bottom: 0;
+        margin-left: -60px;
+        width: 100%;
+        .slogan{
+            background-color: #ffa007;
+            $font-size: 18;
+            font-size: em($font-size);
+            color: #ffffff;
+            font-family: $secondary__font;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.333;
+            padding: em(5, $font-size) em(23, $font-size) em(10, $font-size);
+            display: inline-block;
+            position: absolute;
+            top: 38px;
+            left: 260px;
+        }
+        .price{
+            background-color: #062c49;
+            $font-size: 34;
+            font-size: em($font-size);
+            font-weight: bold;
+            color: #fefefe;
+            padding: em(5, $font-size) em(20, $font-size);
+            display: inline-block;
+            position: absolute;
+            top: 99px;
+            left: 260px;
+            .amount{
+                font-size: em(18, $font-size);
+            }
+            &:after{
+                content:"";
+                display: block;
+                position: absolute;
+                left:100%;
+                bottom: 0;
+                border-bottom:61px solid #062c49;
+                border-right:30px solid transparent;
+            }
+        }
+    }
+    &__form{
+        width: 332px;
+        height: 502px;
+        position: absolute;
+        top: 0;
+        background: url(data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIiBbDQoJPCFFTlRJVFkgbnNfZmxvd3MgImh0dHA6Ly9ucy5hZG9iZS5jb20vRmxvd3MvMS4wLyI+DQpdPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzMyIiBoZWlnaHQ9IjUwMiIgdmlld0JveD0iMCAwIDMzMiA1MDIiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwYzUxODYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNjJiNDgiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgzMzJ2NDY0LjU1NGwtMTY0LjExMyAzNy40NDYtMTY3Ljg4Ny0zNy40NDZ2LTQ2NC41NTR6Ii8+PC9zdmc+) no-repeat;
+        background-size: 100% 100%;
+        padding: em(35) em(28) 0;
+        box-sizing: border-box;
+        right: 50%;
+        margin-right: -490px;
+        .ribbon{
+            background: url(../images/form-ribbon.png) no-repeat;
+            width: 358px;
+            height: 156px;
+            position: absolute;
+            left: -13px;
+            bottom: 60px;
+            .text{
+                $font-size: 18;
+                font-weight: bold;
+                color: #fefefe;
+                text-transform: uppercase;
+                display: block;
+                font-size: em($font-size);
+                transform:rotate(-4.5deg);
+                text-align: center;
+                margin-top: em(87, $font-size);
+            }
+        }
+    }
+    &__ftitle{
+        $font-size: 38;
+        font-size: em($font-size);
+        color: #ffffff;
+        font-family: $secondary__font;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.2;
+        padding-bottom: em(5, $font-size);
+        strong{
+            font-weight: 700;
+            font-size: em(18, $font-size);
+            vertical-align: top;
+        }
+    }
+    .b-form__el{
+        position: relative;
+        z-index: 10;
+    }
+}

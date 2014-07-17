@@ -1,0 +1,49 @@
+.b-form{
+    &__text, &__textarea, &__select{
+        border-radius: 2px;
+        background-color: #fff;
+        border: 1px solid rgb(195, 195, 195);
+        border-radius: 3px;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        color: #454545;
+        font-family: $base__font;
+        $font-size: 14;
+        font-size: em($font-size);
+        height: em(47, $font-size);
+        padding: 0 em(28, $font-size);
+        box-shadow: inset 0px 0px 5px 0px rgba(38, 38, 38, 0.114);
+        transition: box-shadow 0.3s ease;
+        text-transform: uppercase;
+        &:focus{
+            box-shadow: 0 0 5px #0076a3, inset 0px 0px 5px 0px rgba(38, 38, 38, 0.114);
+        }
+        &_small{
+            height: em(37, $font-size);
+            padding: 0 em(13, $font-size);
+        }
+    }
+    &__textarea{
+        resize:none;
+        height:auto;
+        padding: em(5, 14) em(5, 14);
+    }
+    &__select{
+        padding-top: em(3, 14);
+        padding-bottom: em(3, 14);
+    }
+    span.error{
+        color: #ed135a;
+        display: inline-block;
+        $font-size: 12;
+        font-size: em($font-size);
+        padding:em(4, $font-size) 0;
+        display: inline-block;
+        font-style: italic;
+    }
+    &__el{
+        padding: 0 0 em(25);
+        position: relative;
+    }
+}

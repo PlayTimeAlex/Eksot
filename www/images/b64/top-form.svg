@@ -1,0 +1,3 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]><svg xmlns="http://www.w3.org/2000/svg" width="332" height="502" viewBox="0 0 332 502"><defs><linearGradient id="a" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0c5186"/><stop offset="100%" stop-color="#062b48"/></linearGradient></defs><path fill-rule="evenodd" clip-rule="evenodd" fill="url(#a)" d="M0 0h332v464.554l-164.113 37.446-167.887-37.446v-464.554z"/></svg>

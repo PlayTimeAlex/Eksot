@@ -1,0 +1,106 @@
+.wpcf7-not-valid-tip{
+    position: absolute;
+    background: #ff0000;
+    padding:0 15px;
+    font-size: 11px!important;
+    line-height:12px;
+    text-transform:lowercase;
+    display: inline-block!important;
+    bottom: -11px;
+    left: 2px;
+    box-sizing: border-box;
+    color:#fff!important;
+}
+.wpcf7-not-valid{
+    border-color: #ff0000;
+}
+.alert #cboxContent, .succes #cboxContent{
+    padding:4em 2em;
+}
+.alert #cboxLoadedContent, .succes #cboxLoadedContent{
+    color:red;
+    text-align:center;
+    font-size:21px;
+}
+.succes #cboxLoadedContent{
+    color:green;
+}
+.ajax-loader{
+    margin-left: -35px!important;
+    position: absolute;
+    left: 50%;
+    bottom: 11px;
+    display:block;
+}
+/*.b-promoForm__form .wpcf7-response-output, .b-form .wpcf7-response-output{
+	height:0!important;
+	overflow:hidden!important;
+	padding:0!important;
+	margin:0!important;
+	border:0!important;
+}*/
+span.wpcf7-form-control-wrap{
+    overflow:visible!important;
+    height:auto!important;
+    display:block!important;
+}
+.wpcf7-response-output{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0!important;
+    font-size:1.5em;
+}
+.b-form__text_index{
+    width:102px;
+}
+.b-form__text_city{
+    width:193px;
+    margin: 0 0 0 14px;
+}
+.b-rform div.wpcf7-response-output, .b-warranty__form-wrap div.wpcf7-response-output, .b-promo__form div.wpcf7-response-output{
+    font-size: 2.2em;
+    padding: 2em 1em 1em;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255,174,0,.8);
+    text-align: center;
+    box-sizing: border-box;
+    color:#ffffff;
+    cursor: pointer;
+    z-index:50;
+}
+.b-rform div.wpcf7-response-output:after, .b-warranty__form-wrap div.wpcf7-response-output:after, .b-promo__form div.wpcf7-response-output:after{
+    display: block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: rgb(59,133,200) url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNiODVjOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMxJSIgc3RvcC1jb2xvcj0iIzM2N2NiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iIzJkNmNhNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk2JSIgc3RvcC1jb2xvcj0iIzI4NjM5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk4JSIgc3RvcC1jb2xvcj0iIzE2NTE4MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNjUxODEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) repeat-x;
+    background-size:100% 100%;
+    border:0;
+    cursor: pointer;
+    color: #fff;
+    font-family: $secondary__font;
+    $font-size: 20;
+    font-size: $font-size*1px;
+    font-weight: 400;
+    padding: em(8, $font-size) em(40, $font-size);
+    line-height: 1.5;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 0px 0px rgba(22, 81, 129, 0.392);
+    content:"Еще раз";
+    margin:1em 0 0;
+}
+.b-rform div.wpcf7-response-output.wpcf7-mail-sent-ok:after, .b-warranty__form-wrap div.wpcf7-response-output.wpcf7-mail-sent-ok:after{
+    content:"Закрыть";
+}
+.b-promo__form div.wpcf7-response-output{
+    background-color: #072d4b;
+    border:0!important;
+    height:464px;
+}
+.b-promo__form div.wpcf7-response-output.wpcf7-mail-sent-ok:after{
+    display: none;
+}

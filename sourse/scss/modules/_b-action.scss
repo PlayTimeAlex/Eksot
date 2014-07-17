@@ -1,0 +1,73 @@
+.b-action{
+    padding: em(118) 0 em(106) 0;
+    &__block{
+        text-align: center;
+        border:5px solid #ffae00;
+        width: em(652);
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding-bottom: em(29);
+        p{
+            $font-size: 16;
+            font-size: em($font-size);
+            color: #464646;
+        }
+    }
+    &__title{
+        display: inline-block;
+        background-color: #fff;
+        line-height: 1;
+        $font-size: 38;
+        font-size: em($font-size);
+        padding: 0 em(65, $font-size);
+        text-transform: uppercase;
+        margin-top: em(-20, $font-size);
+        font-family: $secondary__font;
+        font-weight: 300;
+        padding-bottom: em(12, $font-size);
+    }
+    &__last{
+        $font-size: 24;
+        font-size: em($font-size);
+        color: #464646;
+        font-family: $secondary__font;
+        font-weight: 300;
+        padding-bottom: em(12, $font-size);
+    }
+    &__what{
+        $font-size: 24;
+        font-size: em($font-size);
+        font-family: $secondary__font;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #464646;
+        padding-bottom: em(19, $font-size);
+    }
+    &__counter{
+        .num {
+            $font-size: 64;
+            font-size: em($font-size);
+            font-family: $secondary__font;
+            font-weight: 800;
+            color: #464646;
+            display: inline-block;
+            border:1px solid #c6c6c6;
+            line-height: em(80, $font-size);
+            padding: 0 em(13, $font-size);
+            border-left: 0;
+            &:first-child{
+                border-left:1px solid #c6c6c6;
+            }
+        }
+        padding-bottom: em(4);
+    }
+    &__amount{
+        $font-size: 24;
+        font-size: em($font-size);
+        color: #464646;
+        font-family: $secondary__font;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-bottom: em(36, $font-size);
+    }
+}
